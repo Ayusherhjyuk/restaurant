@@ -1,0 +1,641 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f7f2f2;
+    height: 111px;
+    width: 100%
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 111px;
+    width: 113px;
+}
+
+.navbar {
+    display: flex;
+    gap: 37px;
+    position: relative;
+    left: -53px;
+    transition: 0.5s ease-in;
+}
+
+.navbar a {
+    font-size: 21px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration-line: none;
+}
+
+.navbar a:hover {
+    transition: 0.2s ease-in;
+    box-shadow: 5px 5px 10px rgb(166, 162, 162);
+    scale: 1.03;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger img {
+    height: 29px;
+    width: 28px;
+    position: relative;
+    left: -21px;
+    display: none;
+}
+.close{
+    display: none;
+}
+.close img{
+    height: 29px;
+    width: 28px;
+    position: relative;
+    left: -21px;
+    display: none;
+}
+
+@media (max-width:660px) {
+    .navbar {
+        background-color: rgb(236, 57, 57);
+display: flex;
+flex-direction: column;
+gap: 20px;
+position: relative;
+top: 163px;
+left: -24px;
+transition: 0.5s ease-in;
+clip-path: polygon(100% 0%, 0% 0%, 0 0, 100% 0);
+width: 1008px;
+justify-content: center;
+align-items: center;
+z-index: 1;
+
+    }
+
+.hamburger {
+    display: block;
+}
+
+.hamburger img {
+    
+    display: block;
+}
+.close{
+    display: block;
+}
+
+}
+/* ------------------------------------------------------------------------------- */
+
+.home{
+    
+    /* width: 399vw; */
+padding: 2px;
+overflow: hidden;
+}
+ .home .slide{
+    display: flex;
+justify-content: center;
+align-content: center;
+text-align: center;
+width: 1000vw;
+}
+.slide img{
+    
+    position: relative;
+    width: 90%;
+height: 520px;
+animation: aj 15s ease-in infinite;
+}
+.wrapper{
+    display: flex;
+    width: 399vw;
+    overflow: hidden;
+    
+}
+.home .slide  .content{
+position: absolute;
+left: 500px;
+display: flex;
+flex-direction: column;
+gap: 4px;
+justify-content: center;
+align-items: center;
+margin-top: 244px;
+z-index: 1;
+}
+.home .slide .content h1{
+    color: white;
+font-size: 35px;
+animation: animate .8s ease-in infinite; 
+}
+
+@keyframes aj {
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(0);
+  }
+  30%{
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(-100%);
+  }
+  55%{
+    transform: translateX(-200%);
+  }
+  75%{
+    transform: translateX(-200%);
+  }
+  80%{
+    transform: translateX(-300%);
+  }
+  100%{
+    transform: translateX(-300%);
+  }
+}
+@keyframes animate {
+    0%{
+        transform: translatey(5px);
+    }
+    50%{
+        transform: translatey(-5px);
+    }
+    100%{
+        transform: translatey(5px);
+    }
+}
+
+.content  button{
+    width: 97px;
+height: 28px;
+padding: 4px;
+color: #0f0f0f;
+background-color: white;
+border-radius: 14px;
+font-size: 15px;
+font-weight: bold;
+box-shadow: 2px 2px 2px 2px  #0f0f0f;
+
+}
+.content button:hover{
+    color: white;
+    background-color: black;
+    box-shadow: 2px 2px 2px 2px  #0f0f0f;
+    scale: 1.1;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.cardcontainer{
+    display: flex;
+    gap: 30px;
+    padding-top: 120px;
+    padding-left: 130px;
+    padding-right: 50px;
+    padding-bottom: 140px;
+}
+.card{
+    width: 15%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 225, 225);
+    padding: 5px;
+}
+.card img{
+    height: 130px;
+}
+.card h2{
+    
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+    font-size: 44px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.card:hover{
+    background-color: rgb(36, 47, 57);
+    box-shadow: 4px 4px 4px 4px black;
+    scale: 1.13;
+    color: azure;
+}
+
+
+/* ------------------------------------------------------------------- */
+
+
+.line{
+    background-color: #706c6c;
+    height: 1px;
+    width: 100%;
+}
+
+.menu{
+    padding-top: 15px;
+padding-bottom: 20px;
+}
+
+
+.menusearch{
+    display: flex;
+padding-top: 20px;
+padding-bottom: 32px;
+}
+.menusearch h1{
+    position: relative;
+    font-size: 42px;
+    left: 45%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menusearch input{
+    width: 125px;
+height: 30px;
+left: 70%;
+position: relative;
+top: 20px;
+color: black;
+background-color: white;
+border-radius: 8px;
+box-shadow: 2px 2px 2px 1px gray;
+font-weight: bold;
+}
+.menusearch button{
+    position: relative;
+left: 71%;
+height: 30px;
+top: 20px;
+width: 66px;
+background-color: white;
+color: black;
+font-size: 15px;
+font-weight: bold;
+border-radius: 9px;
+box-shadow: 2px 2px 3px 1px gray;
+}
+.menucardlist{
+    height: 500px;
+gap: 32px;
+overflow-y: scroll;
+padding-left: 74px;
+padding-top: 36px
+
+}
+.menucard{
+    height: 233px;
+background-color: #d0dbd0;
+width: 22%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+.menucard img{
+    height: 136px;
+    width: 80%;
+}
+.menucard h2{
+    height: 39px;
+    padding-top: 9px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menucard button{
+    width: 97px;
+height: 24px;
+color: black;
+background-color: white;
+border-radius: 5px;
+font-size: 13px;
+font-weight: bold;
+opacity: 0;
+}
+.menucard:hover button{
+    width: 97px;
+height: 24px;
+color: black;
+background-color: white;
+border-radius: 5px;
+font-size: 13px;
+font-weight: bold;
+opacity: 1;
+}
+.menucard:hover{
+scale: 0.93;
+background-color: #4e504e;
+color: #f7f2f2;
+box-shadow: 2px 2px 2px 2px rgb(80, 77, 77);
+}
+
+.menucardlist{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+ .About{
+    height: 860px;
+    background-color: #2f2828;
+}
+.aboutcard{
+    height: 246px;
+width: 20%;
+background-color: #e9dede;
+color: rgb(14, 12, 12);
+padding-top: 5px;
+padding-left: 7px;
+display: flex;
+flex-direction: column;
+}
+.aboutcardcontainer{
+    display: flex;
+gap: 32px;
+padding-left: 124px;
+padding-top: 51px;
+}
+.aboutcard p{
+    position: relative;
+top: 31px;
+}
+.aboutcard h2{
+    position: relative;
+top: 23px;
+}
+.aboutcard h4{
+
+    position: relative;
+    top: 19px;
+  }
+
+  .About h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .aboutcard p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .chefcontainer{
+    display: flex;
+gap: 85px;
+padding-left: 92px;
+padding-top: 76px;
+  }
+
+
+
+  .chefcard img{
+    height: 320px;
+    width: 314px;
+  }
+  .chefcard{
+    height: 321px;
+  }
+  .chefcard h4{
+    position: relative;
+    top: -54px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /* ----------------------------------------------------------------------------------------- */
+
+  .contactcontainer{
+    height: 346px;
+display: flex;
+gap: 200px;
+padding-left: 93px;
+list-style: none;
+padding-top: 86px;
+  }
+
+  .contactcard{
+    background-color: #f9fff9;
+height: 198px;
+width: 200px;
+display: flex;
+flex-direction: column;
+gap: 17px;
+  }
+  .contactcard ul{
+    font-size: 21px;
+    cursor: pointer;    
+  }
+  .contactcard h2{
+    font-size: 29px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  .follow{
+    height: 20px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+  }
+
+  .follow h2{
+    font-size: 29px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  .follow img{
+    cursor: pointer;
+  }
+  .footcontent{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+padding-bottom: 57px;
+gap: 20px;
+left: -90px;
+position: relative;
+  }
+  .footer{
+    display: flex;
+  }
+  .footer .logo img{
+    width: 100%;
+  }
+
+  @media (max-width:600px) {
+    
+    .home .slide .content{
+        left: 15%;
+    }
+    .cardcontainer{
+        display: flex;
+gap: 8px;
+padding-top: 32px;
+padding-left: 27%;
+padding-right: 264px;
+padding-bottom: 22px;
+flex-direction: column;
+    }
+
+.card{
+    width: 200px;
+}
+.menusearch{
+    display: flex;
+padding-top: 12px;
+padding-bottom: 32px;
+left: -7%;
+position: relative;
+flex-direction: column;
+}
+
+.menusearch input{
+    left: 42%;
+    top: 9px;
+}
+.menusearch button{
+    left: 50%;
+}
+
+
+.menucardlist{
+    padding-left: 29px;
+}
+.menucard{
+    height: 213px;
+    width: 44%;
+}
+.menucard h2{
+    font-size: 16px;
+}
+.aboutcard{
+    height: 198px;
+width: 43%;
+flex-direction: column;
+}
+.aboutcardcontainer{
+    display: flex;
+gap: 32px;
+padding-left: 2%;
+padding-top: 32px;
+flex-wrap: wrap;
+}
+
+.aboutcard p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 11px;
+}
+.chefcontainer{
+    display: flex;
+    gap: 28px;
+    padding-left: 11px;
+    padding-top: 0px;
+    flex-wrap: wrap;  
+}
+.chefcard img{
+    height: 139px;
+width: 160px;
+}
+.chefcard h4{
+    position: relative;
+    top: -32px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.chefcard{
+    height: 117px;
+}
+.contactcontainer{
+    height: 395px;
+display: flex;
+gap: 1px;
+padding-left: 32px;
+list-style: none;
+padding-top: 51px;
+flex-wrap: wrap;
+}
+.contactcard{           
+    background-color: #f9fff9;
+height: 195px;
+width: 171px;
+display: flex;
+flex-direction: column;
+gap: 17px;
+}
+.contactcard h2{
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contactcard ul{
+    font-size: 19px;
+cursor: pointer;
+}
+.follow{
+    height: 282px;
+display: flex;
+flex-direction: column;
+gap: 8px;
+padding-left: 0;
+}
+.follow h2{
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.About h1{
+    padding-top: 5px;
+}
+.professional{
+    padding-top: 43px;
+}
+.footcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+    gap: 14px;
+    left: -7px;
+    position: relative;
+  }
+  .slide{
+    height: 475px;
+  }
+  .slide img{
+    height: 475px;
+  }
+}
